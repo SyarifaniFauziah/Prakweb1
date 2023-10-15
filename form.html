@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Penduduk</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Form Input Data Penduduk</h2>
+    <form action="hasil.html" method="post">
+        <fieldset>
+            <legend><b><i>Form Input</i></b></legend>
+            <label for="nama">Nama : </label>
+            <input type="text" name="nama" id="nama">
+
+            <br>
+            <br>
+
+             <label for="agama">Agama</label>
+            <select name="agama" id="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="buddha">Buddha</option>
+                <option value="hindu">Hindu</option>
+            </select>
+            <br>
+            <br>
+            <label for="Jk">Jenis Kelamin  : </label>
+            <input type="radio" value="perempuan" name="jk" id="Jk">
+            <label for="">Perempuan |</label>
+            <input type="radio" value="Laki - Laki" name="jk" id="jk" >
+            <label for="">Laki-Laki</label>
+            <br>
+            <br>
+            <label for="">Foto :</label>
+            <input type="file">
+            <br>
+            <br>
+            <input type="submit" value="Simpan" id="Simpan">
+
+        </fieldset>
+    </form>
+</body>
+</html>
