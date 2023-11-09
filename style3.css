@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-around;
+}
+.box {
+    height: 80px;
+    border: double  ;
+    justify-content: space-around;
+}
+.box:nth-child(1){
+    width: 20%;
+    background-color: yellow;
+}
+.box:nth-child(2){
+    width: 79%;
+    background-color: orange;
+}
+.hijau{
+    height: 400px;
+    width: 20%;
+    background-color: green;
+    border: double;
+}
+.grey{
+    height: 400px;
+    width: 58%;
+    background-color: grey;
+    border: double;
+}
+.bluesky{
+    height: 400px;
+    width: 20%;
+    background-color: aqua;
+    border: double;
+}
+.biru{
+    height: 80px;
+    width: 100%;
+    background-color: navy;
+    border: double;
+}
