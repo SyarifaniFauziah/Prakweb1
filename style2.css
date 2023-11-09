@@ -1,0 +1,29 @@
+.boxx{
+    height: 100px;
+    width: 100%;
+    border: double;
+    background-color: burlywood;
+    margin-bottom: 5px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.box{
+    height: 160px;
+}
+/* pseudo class */
+.box:nth-child(1){
+    width: 160px;
+    background-color: yellow;
+}
+.box:nth-child(2){
+    width: 1050px;
+}
+.oren{
+    background-color: orange;
+}
+.biru{
+    background-color: aqua;
+}
