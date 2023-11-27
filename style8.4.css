@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+nav {
+    height: 100vh;
+    width: 100vw;
+    background: pink;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    display: flex;
+}
+article{
+    flex: 5;
+    order : 1;
+    height: 60vh;
+}
+aside{
+    flex: 1;
+    order: 1;
+    height: 60vh;
+    background: aqua ;
+}
+header, footer{
+    height: 20vh;
+    width: 85vw;
+    background: khaki;
+}
+nav, article, aside, header, footer{
+    padding: 1em;
+}
