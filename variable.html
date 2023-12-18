@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+<body>
+    <div id="nama"></div>
+    <span id="han"></span>
+</body>
+<script>
+    var nama_depan = "Syarifani ";
+    var nama_belakang = "Fauziah ";
+
+    console.log(typeof(nama_belakang))
+    // ini buat nampilin ke browser 
+    var namalengkap = nama_depan + nama_belakang;
+    document.getElementById("nama").innerHTML ="Nama Lengkap : " + namalengkap
+
+    // belajar fungsi atau function 
+    function hitung(a,b){
+        return a + b;
+    }
+    console.log(hitung(2,5))
+</script>
+</html>

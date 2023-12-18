@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingkaran</title>
+</head>
+<body>
+    <h3>Luas dan keliling lingkaran</h3>
+    <input type="number" id="jari-jari" value="" placeholder= "masukan jari-jari">
+    <br>
+    <br>
+    <p>Luas Lingkaran :<input type="number" id="luas" value="" disabled></p>
+    <p>Keliling lingkaran Lingkaran :<input type="number" id="keliling" value="" disabled></p>
+    <br>
+    <br>
+    <button type="button" onclick="hitung()">Hitung</button>
+
+</body>
+<script>
+    function hitung(){
+        let r = Number(document.getElementById('jari-jari').value);
+        const phi = 3.14
+        let hasilluas = Number(3.14*r*r);
+        let hasilkeliling = Number(2*3.14*r);
+
+        document.getElementById('luas').value = hasilluas;
+        document.getElementById('keliling').value = hasilkeliling;
+           
+    }
+</script>
+
+</html>
