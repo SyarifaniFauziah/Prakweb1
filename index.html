@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Image Picker</title>
+    <script>
+        function image_picker(){
+            const list_image = ["gorilla.jpg", "monkey.jpg", "forg.jpg","bird.jpg", "iguana.jpg"];
+            let pilihan = document.getElementById("opsi").value;
+
+            if( pilihan == "Gorilla" ){
+                let select = list_image[0]; //gorilla.jpg
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+
+            if( pilihan == "Monkey"){
+                let select = list_image[1]; //monkey.jpg
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+
+            if( pilihan == "Frog"){
+                let select = list_image[2]; //forg.jpg
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+            if( pilihan == "Bird" ){
+                let select = list_image[3]; //bird.jpg
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+            if( pilihan == "Iguana" ){
+                let select = list_image[4]; //iguana.jpg
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+
+
+        }
+    </script>
 </head>
 <body>
-    <h1 style="text-align: center;">Selamat Datang Admin</h1>
+    <h1 style="text-align: center; background-color: aquamarine;">Image Picker</h1>
+
+    <select name="" id="opsi" onchange="image_picker()">
+        <option value="">Image Picker</option>
+        <option value="Gorilla"> Gorilla </option>
+        <option value="Monkey"> Monkey</option>
+        <option value="Frog"> Frog</option>
+        <option value="Bird"> Bird</option>
+        <option value="Iguana"> Iguana</option>
+    </select>
+
+    <div class="container">
+        <img id="gambar">
+    </div>
+
 </body>
 </html>
